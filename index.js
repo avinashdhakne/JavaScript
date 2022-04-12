@@ -183,9 +183,44 @@ console.log(sel)
 let sel2 = document.querySelectorAll('.container')
 console.log(sel2)
 
+// add action listner
+function clicked(){
+  console.log("This function will call after clicking")
+  //<button id="click" onclick="clicked()">Click</button>
+}
 
+// when the page get load this function will invoked
+window.onload = function (){
+  console.log("This command will invoed when document is loaded")
+}
 
+// this function will get invoked when we click on it
+first.addEventListener("click", function(){
+  console.log("This is on click event listne to the container")
+})
 
+// this function will get invoked when we drag mouse over it
+first.addEventListener("mouseover", function(){
+  console.log("This is mouse on event listne to the container")
+})
 
+// this function will get invked when we remove mouse curser from container
+first.addEventListener("mouseout", function(){
+  console.log("This is mouse out event listne to the container")
+})
 
+// this function run when we press the click
+first.addEventListener("mouseup", function(){
+  console.log("This is mouse up event listne to the container")
+})
 
+// this function run when we release the click
+first.addEventListener("mousedown", function(){
+  console.log("This is mouse down event listne to the container")
+})
+
+// it will change the script wihen we click it 
+second.addEventListener("click", function(){
+  document.querySelectorAll('.container')[1].innerHTML = "<b> you have clicked </b>" 
+  console.log("This is mouse down event listne to the container")
+})
