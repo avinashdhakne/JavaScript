@@ -1,13 +1,13 @@
-/*alert("Bhwaaa")
-    document.write("this is document write")*/
+// alert("Bhwaaa")
+document.write("this is document write")
 
 // Javascript console API -> Application programming interface
 
-/*console.log("My First message")
-    console.warn("this is warning")
-    console.log("this is an error")
-    console.clear()
-    console.assert(4 == 4)*/
+console.log("My First message")
+console.warn("this is warning")
+console.log("this is an error")
+console.clear()
+console.assert(4 == 4)
 
 // JS variables
 var num1 = 20;
@@ -123,6 +123,66 @@ console.log(date.getTime())
 console.log(date.getFullYear())
 console.log(date.getMonth())
 console.log(date.getHours())
+
+// Document Object Module (DOM) Manipulation
+console.log(document.location)
+
+// click on betton with id
+document.getElementById('click').click()
+document.getElementById('click').style.border = '2px solid blue'
+
+console.log(document.getElementById('click'))
+
+// this will store the list of elements
+let elements = document.getElementsByClassName("container")
+console.log(elements)
+
+// manipulate the paricular element by its index
+elements[0].style.background = 'yellow'
+elements[1].classList.add('bg-primary')
+elements[0].classList.add('text-success')
+
+// remove the formating 
+elements[0].classList.remove('text-success')
+
+// get inner html
+console.log(elements[0].innerHTML)
+
+// get the inner text
+console.log(elements[0].innerText)
+
+console.log(elements.innerHTML)
+console.log(elements.innerText)
+
+let tagele = document.getElementsByTagName('div')
+console.log(tagele)
+
+// add child element to HTML
+createElement = document.createElement("p")
+createElement.innerText = "This is JS created paragraph"
+tagele[0].appendChild(createElement)
+
+// replace child element from HTML
+createElement2 = document.createElement("b")
+createElement2.innerText = "This is replaced paragraph"
+tagele[0].replaceChild(createElement2, createElement)
+
+console.log(document.location)
+console.log(document.title)
+console.log(document.URL)
+console.log(document.scripts)
+console.log(document.forms)
+console.log(document.links)
+console.log(document.images)
+console.log(document.domain)
+
+//selecting using query
+let sel = document.querySelector('.container')
+console.log(sel)
+
+let sel2 = document.querySelectorAll('.container')
+console.log(sel2)
+
 
 
 
