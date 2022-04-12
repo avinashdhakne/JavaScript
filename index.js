@@ -118,4 +118,14 @@ console.log(myString.replace("am", "are"))
 let date = new Date();
 console.log(date)
 
+// date methodes 
+console.log(date.getTime())
+console.log(date.getFullYear())
+console.log(date.getMonth())
+console.log(date.getHours())
+
+
+
+
+
 
