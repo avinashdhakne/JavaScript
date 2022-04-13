@@ -224,3 +224,34 @@ second.addEventListener("click", function(){
   document.querySelectorAll('.container')[1].innerHTML = "<b> you have clicked </b>" 
   console.log("This is mouse down event listne to the container")
 })
+
+// set timeout and ser-interval
+// normal function
+function normal_sum(a,b){
+  return a+b;
+}
+
+// arrow functions
+arrow_sum = (a,b)=>{
+  return a+b;
+}
+
+console.log("noraml Function: ", normal_sum(10,85))
+console.log("arrow function: ", arrow_sum(10,85))
+
+dummy_function = ()=>{
+  console.log("this function will invoked after 5 seconds")
+}
+
+dummy_func2 = ()=>{
+  console.log("this function will invoked in interval of 3 seconds")
+}
+
+// this function will invoked after 5 seconds
+setTimeout(dummy_function, 5000)
+
+// this function will invoked in interval of 3 seconds
+clr = setInterval(dummy_func2, 3000)
+
+// this function will stop the intarval
+clearInterval(clr)
