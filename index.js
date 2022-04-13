@@ -247,11 +247,28 @@ dummy_func2 = ()=>{
   console.log("this function will invoked in interval of 3 seconds")
 }
 
-// this function will invoked after 5 seconds
+// This function will invoked after 5 seconds
 setTimeout(dummy_function, 5000)
 
-// this function will invoked in interval of 3 seconds
+// This function will invoked in interval of 3 seconds
 clr = setInterval(dummy_func2, 3000)
 
-// this function will stop the intarval
+// This function will stop the intarval
+// We can similary stop the execution of setTimeout function
 clearInterval(clr)
+// use clearinterval/clearTimeout to cancel setinterval/settimeout function
+
+// JS local storage
+// set the string in local storage
+localStorage.setItem("Name","Avinash")
+// print the local storage
+console.log(localStorage)
+// clear the local stoage
+localStorage.clear()
+
+// get and set methode
+console.log("get and set methodes")
+// this function set the values in key value pair
+localStorage.setItem("name","Avinash")
+// this will print Avinash if this command run on console
+localStorage.getItem("name")
