@@ -272,3 +272,25 @@ console.log("get and set methodes")
 localStorage.setItem("name","Avinash")
 // this will print Avinash if this command run on console
 localStorage.getItem("name")
+// to remove single item
+localStorage.removeItem("name")
+
+// JSON
+obj = {name:"Avinash", length: 1}
+json = JSON.stringify(obj)
+console.log("type of obj variable: ", typeof(obj))
+
+// we can also print type of function like this
+console.log("type of json variable: ", typeof json)
+console.log("obj: ", obj)
+console.log("json: ", json)
+
+obj2 = {name:'Avinash', length: 1, "info": {college: "VIT"}}
+json2 = JSON.stringify(obj2)
+console.log("obj: ", obj2)
+console.log("json: ", json2)
+
+parse = JSON.parse(`{"name":"Avinash","length":1,"info":{"college":"VIT"}}`)
+console.log("parse Function: ", parse)
+/* JSON support only double quotes not a single quotes but javascript object can accept single quote*/
+
