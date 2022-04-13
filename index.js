@@ -294,3 +294,9 @@ parse = JSON.parse(`{"name":"Avinash","length":1,"info":{"college":"VIT"}}`)
 console.log("parse Function: ", parse)
 /* JSON support only double quotes not a single quotes but javascript object can accept single quote*/
 
+// JS version ========================>
+// ECMA scripts
+// backtiks - template literals
+
+var a = 100
+console.log(`this is variable ${a}`)
